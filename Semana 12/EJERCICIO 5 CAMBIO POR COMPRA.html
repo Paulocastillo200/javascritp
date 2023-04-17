@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <H2>SUPERMERCADO EL VACANO</H2>
+    <H3>CAMBIO POR COMPRAS</H3>
+    <Script>
+        //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular total a pagar, muéstrelo por una mensaje de alerta al usuario, luego permita la captura del monto en efectivo pagado y validar cancelación total del monto de la factura, finalmente enviar mensaje Gracias por su compra//
+//entrada
+producto=prompt("Ingrese nombre producto:");
+precio=parseInt(prompt("Ingrese precio unitario:"));
+cantidad=parseInt(prompt("Ingrese cantidad comprada:"));
+//PROCESO
+total=cantidad*precio;
+//SALIDA
+alert("Su valor a pagar es ... " + "\n"+ total);
+document.write("Su valor a pagar es ... " + total + "<br>"+"<br>");
+//validacion del monto a pagar en caja
+pago=parceInt(prompt("ingrese monto efectivo pagado"))
+saldo=total-pago;
+//condicional si para verificar si hay vueltas x cambio
+if(pago==total){
+    alert("TOME SU TRILLA DE PAGO, GRACIAS POR SU COMPRA");
+}else{
+    alert("TOME SU TRILLA DE PAGO, y sus vueltas..$"+saldo+"GRACIAS POR SU COMPRA");
+}
+document.write("***************************");
+    </Script>
+</body>
+</html>

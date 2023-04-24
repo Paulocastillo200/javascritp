@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img src="/IMG/incap.png" alt="" width="150" height="150">
+    <h1>VALIDA NOTA GRUPAL PROGRAMACION JAVASCRIPT</h1>
+    <H2>MATERIA PAE01 LUNES 7AM </H2>
+    <Script>
+        let prom=0;
+        let suma=0;
+        let num_std=1;
+        //proeceso primer while para contar estudiantes
+        while(num_std<=3){
+            nomb_std=prompt("ingrese nombre estudiante");
+            let num_notas=1;
+            //progreso segundo while para ingresar 3 notas
+            while(num_notas<=3){
+            nota=parseFloat(prompt("ingrese nota [1=Desempeño 2=Talleres 3=Examenes]" ));
+            suma+=nota;//sumador de notas estudiante
+            num_notas++;//contador de notas
+        }
+        num_std++;
+        }
+        //calculador de notas
+        prom=suma/9;
+        document.write("<br>");
+        document.write("******** BOLETIN DE NOTAS ********"+"<br>");
+        document.write("PROMEDIO GRUPAL MATERIA PAE.."+prom.toFixed(2)+"<br>")
+    </Script>
+    </center>
+</body>
+</html>

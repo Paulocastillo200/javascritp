@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>CREAR UN ARRAYS POR CAPTURA</h1>
+<h3>METODO SPLICE - CICLO FOR</h3>
+<br><br>
+<p>El nuevo array es el siguiente: ...</p>
+<script>
+//
+let num;
+let datos=new Array();
+//
+num=parseInt(prompt("Ingrese cantidad de elementos a ingresar a arrays"));
+for (i=0;i<num;i++){
+//recorre arrays
+datos[i]=prompt("Ingrese dato nuevo al arrays.."+i);
+}
+//PROCESO DE BUSQUEDA -//
+let dator=prompt("ingrese dato a eliminar en arrays");
+let indice=datos.indexOf(dator.trim());
+//Aplicar metodo splice para borrar
+if(indice>-1){
+var index = datos.splice(indice, 1);
+alert("Dato eliminado en arrays... lista nueva:.." + datos);
+}else{
+alert("ERROR..No se encontró Dato en array" );
+}
+document.write(datos+",");
+console.log(datos);
+</script>
+</center>
+</body>
+</html>
